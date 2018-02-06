@@ -1,0 +1,27 @@
+Ce document est le cahier des charges du projet. Il convient d'y faire apparaître les fonctionnalités et les spécificités techniques.
+
+Langages :
+- Python3
+- sqlite (utilisation de la bibliothèque sqlite3 sous Python)
+- choix à faire pour une interface graphique (Tkinter ?)
+
+Objectifs :
+
+- Base de donnée contenant :
+  - table étudiants
+  - table créneau de colles
+  - emploi du temps de la classe
+  - liste des colles (une fois calculée)
+  
+- procédure de calcul des colles avec remplissage de la base de donnée :
+  - empèche les colles pendant les cours
+  - évite plusieurs colles le même jour
+  - optimise le passage des groupes avec un maximum de colleurs différent
+  - gestion des colles de lettres (optionel)
+  
+- Interface graphique (optionel)
+  - interrogation de la base à tout moment après calcul pour obtenir toutes les colles :
+    - d'un étudiant
+    - d'un colleur
+    - non utilisées (dans le cas d'un groupe fantôme)
+  - Accès colleur pour entrer les notes d'une colle
